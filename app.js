@@ -13,7 +13,7 @@ var express                 = require("express"),
     seedDB                  = require("./seeds"),
     app                     = express();
 
-const port = Process.env.PORT || 3000 ;
+const port = process.env.PORT || 3000 ;
 //Requiring Routes
 var commentRoutes           = require("./routes/comments"),
     campgroundRoutes        = require("./routes/campgrounds"),
@@ -75,4 +75,6 @@ app.use("/campgrounds", campgroundRoutes);
 //     console.log("The YelpCamp ServerV11Deployed Has Started!!!");
 // });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(process.env.PORT || 3000, function(){
+    console.log("YelpCamp Serverv11Deploy Is Running!!!");
+});
