@@ -1,0 +1,43 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail{
+    padding: 0;
+}
+
+.thumbnail .caption-full{
+    padding: 9px;
+}
+
+input[type="text"] {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.btn-block {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.container .row div #newa {
+    margin: 0 0 0 410px;
+}
+
+.newh1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#campdiv {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.delete-form{
+    display: inline;
+}
