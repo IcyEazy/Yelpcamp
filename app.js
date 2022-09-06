@@ -75,6 +75,4 @@ app.use("/campgrounds", campgroundRoutes);
 //     console.log("The YelpCamp ServerV11Deployed Has Started!!!");
 // });
 
-app.listen(port,()=>{  // do not add localhost here if you are deploying it
-    console.log("server listening to port "+port);
-});
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
