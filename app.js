@@ -13,6 +13,7 @@ var express                 = require("express"),
     seedDB                  = require("./seeds"),
     app                     = express();
 
+const port = Process.env.PORT || 3000 ;
 //Requiring Routes
 var commentRoutes           = require("./routes/comments"),
     campgroundRoutes        = require("./routes/campgrounds"),
@@ -70,6 +71,10 @@ app.use("/campgrounds", campgroundRoutes);
 //    }
 //});
 
-app.listen(3000, function(){
-    console.log("The YelpCamp ServerV11Deployed Has Started!!!");
+// app.listen(3000, function(){
+//     console.log("The YelpCamp ServerV11Deployed Has Started!!!");
+// });
+
+app.listen(port,()=>{  // do not add localhost here if you are deploying it
+    console.log("server listening to port "+port);
 });
