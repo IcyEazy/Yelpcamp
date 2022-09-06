@@ -18,7 +18,9 @@ var commentRoutes           = require("./routes/comments"),
     campgroundRoutes        = require("./routes/campgrounds"),
     indexRoutes             = require("./routes/index");
     
-mongoose.connect("mongodb://localhost:27017/yelp_camp_deployed");
+//mongoose.connect("mongodb://localhost:27017/yelp_camp_deployed");
+mongoose.connect("mongodb+srv://IcEazy:Heddyeazy4real@yelpcamp.vspfvoz.mongodb.net/test");
+//102.89.42.245/32
 
 //App Config
 app.use(express.static(__dirname + "/public"));
